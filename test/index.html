@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link href="CSS/normalize.css" rel="stylesheet">
+    <script src="JS/choices.min.js" defer></script>
+    <script defer src="JS/tabs.js"></script>
+    <script src="JS/index.js" defer></script>
+    <link href="CSS/animate.min.css" rel="stylesheet">
+    <link href="CSS/keyframes.css" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="visually-hidden">
+    Cushion
+  </h1>
+    <header class="header">
+      <div class="header__top header-top">
+        <div class="container header-container">
+          <p class="header-top__text">
+            SPECIAL OFFER + FREE DELIVERY 2-4&nbsp;DAYS IN&nbsp;SA
+          </p>
+        </div>
+      </div>
+      <div class="header__bottom header-bottom">
+        <div class="container header-container">
+          <a class="header-bottom__logo logo" aria-label="На галвную страницу">
+            <img class="logo__image" src="img/logo.svg" alt="Логотоп Cushion">
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero__left hero-left">
+            <p class="hero-left__text">
+              LIMITED OFFER
+            </p>
+            <div class="hero-left__timer timer" id="countdown">
+              <div class="timer__tiles" id="timer-tiles"></div>
+            </div>
+          </div>
+          <div class="hero__right hero-right">
+            <span class="hero-right__price-old">R&nbsp;250.00</span>
+            <span class="hero-right__price-new">R&nbsp;160.00</span>
+          </div>
+        </div>
+      </section>
+      <section class="order">
+        <div class="container order-container">
+          <div class="order__top order-top flex">
+            <span class="order-top__text-left">
+              Excellent&nbsp;4.8/5
+            </span>
+            <span class="order-top__text-center">
+              Trustpilot
+            </span>
+            <span class="order-top__text-right">
+              best selling
+            </span>
+          </div>
+          <h2 class="order__title">
+            ORTHOPEDIC SLIPPERS
+          </h2>
+          <div class="order__center order-center">
+            <div class="order-center__top order-center-top">
+              <img class="order-center-top__img flex order-center-top__img-active" data-target="one" src="img/black.jpg">
+              <img class="order-center-top__img flex" data-target="two" src="img/orange.jpg">
+              <img class="order-center-top__img flex" data-target="three" src="img/pink.jpg">
+              <img class="order-center-top__img flex" data-target="four" src="img/yellow.jpg">
+            </div>
+            <ul class="order-center__bottom order-center-bottom list-reset flex">
+                <li class="order-center-bottom__item">
+                  <button class="order-center-bottom__item-button order-button btn-reset img-active" data-path="one">
+                    <img class="order-center-bottom__item-img" src="img/black-min.jpg">
+                  </button>
+                </li>
+                <li class="order-center-bottom__item">
+                  <button class="order-center-bottom__item-button order-button btn-reset" data-path="two" >
+                    <img class="order-center-bottom__item-img" src="img/orange-min.jpg">
+                  </button>
+                </li>
+                <li class="order-center-bottom__item">
+                  <button class="order-center-bottom__item-button order-button btn-reset" data-path="three">
+                    <img class="order-center-bottom__item-img" src="img/pink-min.jpg">
+                  </button>
+                </li>
+                <li class="order-center-bottom__item">
+                  <button class="order-center-bottom__item-button order-button btn-reset" data-path="four">
+                    <img class="order-center-bottom__item-img" src="img/yellow-min.jpg">
+                  </button>
+                </li>
+            </ul>
+          </div>
+          <div class="order__description order-description">
+            <p class="order-description__text order-description__text-top">
+              <b class="order-description__text-bold">
+                Fast&nbsp;Delivery:
+              </b>
+              2-4 days from&nbsp;SA
+            </p>
+            <p class="order-description__text order-description__text-bottom">
+              <b class="order-description__text-bold">
+                In&nbsp;Stock:
+              </b>
+              Shipping from Johannesburg
+            </p>
+            <div class="order-description__rating flex">
+              <div class="order-description__rating-area rating-area" data-total-value="4">
+                <div class="rating-area__stars" data-item-value="5"></div>
+                <div class="rating-area__stars" data-item-value="4"></div>
+                <div class="rating-area__stars" data-item-value="3"></div>
+                <div class="rating-area__stars" data-item-value="2"></div>
+                <div class="rating-area__stars" data-item-value="1"></div>
+              </div>
+              <div class="order-description__rating-number" id="order-description-rating-number"></div>
+            </div>
+          </div>
+          <div class="order__bottom order-bottom">
+            <form class="order__bottom-form order-bottom-form" action="https://jsonplaceholder.typicode.com/posts" method="POST" enctype="application/x-www-form-urlencoded">
+              <fieldset class="order-bottom-form__selects form-selects flex">
+                <div class="form-selects__left">
+                  <label class="form-selects__left-title">color</label>
+                  <select class="form-selects__left-select left-select flex" name="color" required>
+                    <option class="left-select__option" value="black" selected>BLACK</option>
+                    <option class="left-select__option" value="orange">ORANGE</option>
+                    <option class="left-select__option" value="pink">PINK</option>
+                    <option class="left-select__option" value="yellow">YELLOW</option>
+                  </select>
+                </div>
+                <div class="form-selects__right">
+                  <label class="form-selects__right-title">size</label>
+                  <select class="form-selects__right-select right-select flex" name="size" required>
+                    <option class="right-select__option" value="1">1</option>
+                    <option class="right-select__option" value="2" selected>2</option>
+                    <option class="right-select__option" value="3">3</option>
+                    <option class="right-select__option" value="4">4</option>
+                    <option class="right-select__option" value="5">5</option>
+                  </select>
+                </div>
+              </fieldset>
+              <button class="order-bottom-form__button btn-reset" type="submit">BUY NOW</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer"></footer>
+</body>
+</html>

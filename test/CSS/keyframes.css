@@ -1,0 +1,51 @@
+:root {
+    /* transition */
+    --short: .3s ease;
+    --short-2: 3s ease;
+}
+
+@keyframes opacity-img {
+  0% {
+    opacity: 40%;
+  }
+
+  10% {
+    opacity: 40%;
+  }
+
+  20% {
+    opacity: 40%;
+  }
+
+  30% {
+    opacity: 40%;
+  }
+
+  40% {
+    opacity: 40%;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  60% {
+    opacity: 60%;
+  }
+
+  70% {
+    opacity: 70%;
+  }
+
+  80% {
+    opacity: 80%;
+  }
+
+  90% {
+    opacity: 90%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
